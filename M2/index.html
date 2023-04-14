@@ -1,40 +1,96 @@
-<!DOCTYPE> 
-<html>
-  <head>
-    <title>M02 Tables</title>
-  </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>M02 Table</title>
+  <style>
+      table,th,td {border: 1px solid black; border-collapse: collapse}
+    </style>
+</head>
 <body>
-  <h1>HTML Table Example</h1>
-  <table>
-    <thead>
+ <table>
+ <tbody>
+<!-- first row use h1 and merge -->
+   <tr>
+     <td colspan="3"></td>
+     <td><h1>HTML Table Example</h1></td>
+     <td></td>
+   </tr> 
+   
+<!-- second row use h2 -->
       <tr>
-<!-- FirstRow -->
-        <!-- insert image below -->
-        <th> </th>
-        <th>Meal Planner</th>
-        <th><h2>Recipe Index #</h2></th>
+        <td><h2><img src="https://www.infoedmonton.com/wordpress/wp-content/uploads/2022/04/photo-courtesy-Manila-Grill-Express-rotated.jpg" alt="Filipino Food" width="400" height="300" /></h2></td>
+        <td><h2>Meal Planner</h2></td>
+        <td><h2>Recipe Index #:</h2></td>
       </tr>
-    </thead>
-<!-- SecondRow -->    
-   <tbody>
+<!-- third row use th-->    
+
      <tr>
        <th>Week Starting</th>
        <th>2/15/2018</th>
        <th>Instructions</th>
      </tr>
-<!-- ThirdRow -->     
+   
      <tr> 
-       <th>Days of the Week</th>
-       <th>Recipe Name</th>
-       <th> </th>
+       <td><b>Days of the Week</b></td>
+       <td><b>Recipe Name</b></td>
+       <td rowspan="8"> </td>
      </tr>
-
-  
-  
-        
-        
-        
-        
-</body>        
-</html>
-  
+   
+   
+   <tr>
+     <td>Monday</td>
+     <td>Spinach Feta Pizza</td>
+     <td></td>
+   </tr>
+   
+   
+   <tr>
+     <td>Tuesday</td>
+     <td>My New Recipe</td>
+     <td></td>
+   </tr>
+   
+   
+   <tr>
+     <td>Wednesday</td>
+     <td></td>
+     <td></td>
+   </tr>
+   
+   
+   <tr>
+     <td>Thursday</td>
+     <td></td>
+     <td></td>
+   </tr>
+   
+   
+   <tr>
+     <td>Friday</td>   
+     <td></td>
+     <td></td>
+   </tr>
+   
+   <tr>
+     <td>Saturday</td>
+     <td></td>
+     <td></td>
+   </tr>
+   
+   <tr>
+     <td>Sunday</td>
+     <td></td>
+     <td></td>
+   </tr>
+   
+   
+   
+   
+   </tbody>
+  </table>
+   
+   </body>  
+  </html>     
+     
