@@ -1,5 +1,9 @@
 body {
 background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
+min-height: 100%;
+min-width: 1024px;
+width: 100%
+height:auto;
 }
 #title {
 position:fixed;
@@ -20,8 +24,6 @@ font-size:36px;
 img {
 margin-left: 5px;
 margin-top:10px;
-object-fit:cover;
-object-position: 15% 100%;
 }
 
 #container {
