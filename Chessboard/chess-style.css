@@ -6,7 +6,7 @@ background-repeat: no-repeat;
 background-size: cover;
 }
 
-.title {
+#title {
 position:fixed;
 top:0px;
 left:0px;
@@ -56,13 +56,13 @@ background-color:#1f6ab5;
 float:left;
 }
 
-.clear{
-clear: both;
+#clear{
+clear: left right;
 }
 
  
 
-.footer {
+#footer {
 position:fixed;
 bottom:0;
 left:0;
