@@ -9,7 +9,7 @@ margin:0;
 padding:0;
 }
 
-#title {
+.title {
 position:fixed;
 top:0px;
 left:0px;
@@ -63,7 +63,7 @@ clear: left right;
 
  
 
-#footer {
+.footer {
 position:fixed;
 bottom:0;
 left:0;
