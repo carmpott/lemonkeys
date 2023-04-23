@@ -1,9 +1,12 @@
 body {
 background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
 height: 100%;
-background-position: center;
 background-repeat: no-repeat;
+width: 100%;
 background-size: cover;
+background-position: center;
+margin:0;
+padding:0;
 }
 
 #title {
