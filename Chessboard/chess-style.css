@@ -1,4 +1,4 @@
-body {
+body{
 background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
 height: 100%;
 background-repeat: no-repeat;
@@ -9,7 +9,7 @@ margin:0;
 padding:0;
 }
 
-.title {
+.title{
 position:fixed;
 top:0px;
 left:0px;
@@ -25,12 +25,12 @@ font-style: normal;
 font-size:40px;
 }
 
-img {
+img{
 margin-left:5px;
 margin-top:10px;
 }
 
-.container {
+.container{
 margin-top:20%;
 margin-left:10%;
 margin-right:10%;
@@ -59,13 +59,11 @@ background-color:#1f6ab5;
 float:left;
 }
 
-#clear{
-clear: left right;
+.clear{
+clear: both;
 }
 
- 
-
-.footer {
+.footer{
 position:fixed;
 bottom:0;
 left:0;
@@ -76,5 +74,4 @@ z-index:10;
 border: 1px solid;
 padding: 10px;
 margin: 0px;
-
 }
