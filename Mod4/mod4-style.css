@@ -1,61 +1,58 @@
 body {
-			  font-family: Arial, Verdana, sans-serif;
-				color: black;
-				text-align: center;
-				width: 90%;
-				margin: 0 auto;
-        background-image: url("https://png.pngtree.com/background/20210716/original/pngtree-cute-watercolor-orange-fruit-background-picture-image_1336386.jpg");
-        background-repeat:no-repeat;
-        background-size:auto;}
+font-family: Arial, Verdana, sans-serif;
+color: black;
+text-align: center;
+width: 90%;
+margin: 0 auto;
+background-image: url("https://www.wowpatterns.com/assets/files/resource_images/green-and-yellow-sliced-lemons-citrus-fruits-pattern.jpg");
+background-size:auto;}
 			
-      main  {
-				overflow: auto;}
+main  {
+overflow: auto;}
+
+nav, section, footer {
+margin: 1%;}
+
+.contents { /*this is for the feature*/
+background-color: #dfbc9f;
+background-image: url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/22827/half-lemon-clipart-md.png");
+background-size:contain;
+background-position: right;
+background-repeat:no-repeat;}
+
+
+.column1 {
+width: 31.3%;
+float: left;
+margin: 1%;
+background-color:#e6b800;}
+
+.column2 {
+width: 31.3%;
+float: left;
+margin: 1%;
+background-color: #daffb3;}
+
+.column3 {
+width: 31.3%;
+float: left;
+margin: right 1%;
+background-color: #ffcc99;}
+
+li {
+display: inline;
+padding: 0.5em;}
 			
-      nav, section, footer {
-				margin: 1%;}
+nav, footer {
+background-color:  #d9f2d9;
+text-align:center;
+padding: 10px;}
 
-
-      .contents{
-         background-color: #dfbc9f;
-         background-image: url("https://creazilla-store.fra1.digitaloceanspaces.com/cliparts/22827/half-lemon-clipart-md.png");
-        background-size:contain;
-        background-position: right;
-        background-repeat:no-repeat;}
-
-
-      .column1 {
-				width: 31.3%;
-				float: left;
-				margin: 1%;
-        background-color:#e6b800;}
-
-      .column2 {
-				width: 31.3%;
-				float: left;
-				margin: 1%;
-        background-color: #daffb3;}
-
-
-      .column3 {
-				width: 31.3%;
-				float: left;
-				margin: right 1%;
-        background-color: #ffcc99;}
-
-			li {
-				display: inline;
-				padding: 0.5em;}
-			
-      nav, footer {
-				background-color:  #d9f2d9;
-        text-align:center;
-				padding: 10px;}
-
-			section, article {
-				height: 10em;
-				margin-bottom: 1em;}
+section, article {
+height: 10em;
+margin-bottom: 1em;}
 
 h1 {
-   font-family: 'LemonRegular';
-   font-weight: normal;
-   font-style: normal;}
+font-family: 'LemonRegular';
+font-weight: normal;
+font-style: normal;}
