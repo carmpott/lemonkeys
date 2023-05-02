@@ -1,3 +1,4 @@
+
 #title{
 position:fixed;
 top:0px;
@@ -16,13 +17,10 @@ font-size:36px;
 
 body{
 background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
-height: 100%;
 background-repeat: no-repeat;
 width: 100%;
 background-size: cover;
 background-position: center;
-margin:0;
-padding:0;
 }
 
 
@@ -31,7 +29,7 @@ margin-left:5px;
 margin-top:10px;
 }
 
-#container {
+#container{
 margin-top: 10%;
 margin-left: 10%;
 margin-right: 10%;
