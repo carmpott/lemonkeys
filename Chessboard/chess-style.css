@@ -1,3 +1,19 @@
+#title{
+position:fixed;
+top:0px;
+left:0px;
+padding:10px;
+margin: auto;
+width:100%;
+background-color:#6bb2d6;
+text-align:center;
+z-index:10;
+font-family: 'SerreriaSobriaMedium';
+font-weight: normal;
+font-style: normal;
+font-size:36px;
+}
+
 body{
 background-image:url("http://3.bp.blogspot.com/-aNRb0w9Uu2E/Uk0w1v9lXjI/AAAAAAAAHrM/RipxfZqlQQ4/s1600/Texture-Backgrounds-Wallpaper-HD.jpg");
 height: 100%;
@@ -9,31 +25,17 @@ margin:0;
 padding:0;
 }
 
-#title{
-position:fixed;
-top:0px;
-left:0px;
-padding:10px;
-margin:0px;
-width:100%;
-background-color:#6bb2d6;
-text-align:center;
-z-index:10;
-font-family: 'SerreriaSobriaMedium';
-font-weight: normal;
-font-style: normal;
-font-size:36px;
-}
 
 img{
 margin-left:5px;
 margin-top:10px;
 }
 
-#container{
-width: 800px;
-margin: 0px auto;
-}
+#container {
+margin-top: 10%;
+margin-left: 10%;
+margin-right: 10%;
+margin-bottom: 10%;}
 
 .row{
 position:relative;
@@ -43,7 +45,7 @@ margin-right:10%;
 
 .white{
 border: 1px solid black;
-width: 12%;
+width: 6%;
 height: 60px;
 background-color:white;
 float:left;
@@ -51,7 +53,7 @@ float:left;
 
 .black{
 border: 1px solid black;
-width: 12%;
+width: 6%;
 height: 60px;
 background-color:#1f6ab5;
 float:left;
@@ -70,6 +72,6 @@ background-color:#6bb2d6;
 text-align:center;
 z-index:10;
 border: 1px solid;
-padding: 10px;
+padding: 0px;
 margin: 0px;
 }
