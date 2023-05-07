@@ -106,6 +106,3 @@ border-top: 1px solid #1f1f1f;
 #footer a { color: #fff; text-decoration: none; border-bottom: 1px dotted #fff; }
 #footer a:hover { border-bottom: 1px dotted #ccc; }
 
-.left { float: left; }
-.right { float: right; }
-.clear { clear: both; }
