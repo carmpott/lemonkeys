@@ -4,7 +4,7 @@ var i = 1;                 // Set counter to 1
 var msg = '';              // Message
 
 // Ask the user for a number from 0-10  (In this assignment, you are not required to validate the input but you can if you want)
-let table = prompt("Please enter a number 1 - 10");
+table = prompt("Please enter a number 1 - 10");
 
 // You will display the multiplication table based on the number entered by the user
 if (operator === 'multipication') {
