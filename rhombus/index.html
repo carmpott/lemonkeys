@@ -1,46 +1,67 @@
 	
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta name="description" content="Week 6 - BC - Rhombus">
 <meta charset="utf-8">
-<title>Creating a Rhombus</title>
+  <link rel="stylesheet" href="rhombus-style.css">
+  
+<title>Creating a Rhombus with Javascript</title>
 </head>
-<body>
-<label>What is the size of Rhombus?</label><br>
+
+  <body>
+
+  <h1>Creating a Custom Rhombus</h1>
+  <p> 
+  <h2>By Carmela Potter</h2> 
+  
+
+<h3><label>What is the size of your Rhombus?</label><br></h3>
 <input type="text" id="rHeight" value="5" size="5">
 <br>
-<label>Choose color for Even position</label><br>
+<h3><label>Choose a color for the Even position:</label><br></h3>
 <select id="colorEven">
 <option value="#0000FF">Blue</option>
 <option value="#FF0000">Red</option>
 <option value="#FF9900">Orange</option>
+<option value="#000000">Black</option>
+<option value="#F1C40F">Yellow</option>
+  <option value="#008080">Teal</option>
 </select><br>
 
-<label>Choose color for Odd position</label><br>
+<h3><label>Choose a color for the Odd position:</label><br></h3>
 <select id="colorOdd">
 <option value="#FF0099">Pink</option>
 <option value="#33FF00">Green</option>
 <option value="#660099">Purple</option>
+  <option value="#7B7D7D">Gray</option>
+  <option value="#808000">Olive</option>
+  <option value="#000080">Navy</option>
 </select>
 <br>
-<label>Choose symbol for Rhombus</label>
+<h3><label>Choose a symbol for your Rhombus:</label></h3>
 <select id="symbol">
 <option value="*">*</option>
+  <option value="+">+</option>
+  <option value="=">=</option>
+  <option value="!">!</option>
 <option value="$">$</option>
 <option value="@">@</option>
+  <option value="#">#</option>
+  <option value="%">%</option>
 </select>
 <br>
+<p>
 <button onclick="createRhombus(document.getElementById('rHeight').value,
 document.getElementById('colorEven').value,
 document.getElementById('colorOdd').value,
-document.getElementById('symbol').value);">Display Rhombus</button>
-<div id="upLeft">Rhombus</div>
+document.getElementById('symbol').value);">Display Custom Rhombus</button>
+    <div id="upLeft">Your Rhombus:</div>
 <div id="upRight"></div>
 <div id="downLeft"></div>
 <div id="downRight"></div>
 <script src="https://carmpott.github.io/lemonkeys/rhombus/js-rhombus.js"></script>
-  
-  
+ 
+
 </body>
-</html>
+  </html>	
