@@ -81,6 +81,7 @@ p + h2 {
 /* added for the third hotel */
 
 #hotel3 {
+  margin-top: 1em;
   padding-bottom: 1em;
 
 #rooms {
