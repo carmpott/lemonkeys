@@ -98,7 +98,7 @@ input
 li a {
 	color: #fff;
 	text-decoration: none;
-	background-image: url("../images/icon-link.png");
+	background-image: url("icon-link.png");
 	background-position: center, right;
 	background-repeat: no-repeat;
   padding-right: 36px;}
@@ -146,7 +146,7 @@ p {
 }
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) { 
     h1{
-        background-image: url(../img/2xkinglogo.png);
+        background-image: url("2xkinglogo.png");
         background-size: 72px 72px;
     }
 }
