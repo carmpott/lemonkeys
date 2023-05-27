@@ -1,12 +1,16 @@
-function validateForm(){
-//1) create a variable to control status of each field. Assume that they are not valid
+var frmvalidator = new Validator("myform"); 
+  frmvalidator.addValidation("FirstName","req","Please enter your First Name"); 
+  frmvalidator.addValidation("FirstName","maxlen=20","Max length for FirstName is 20"); 
+  frmvalidator.addValidation("LastName","req");                         
+  frmvalidator.addValidation("LastName","maxlen=20"); 
 
-//2) create variables to read the values from html text inputs
+  frmvalidator.addValidation("Email","maxlen=50"); 
+  frmvalidator.addValidation("Email","req"); 
+  frmvalidator.addValidation("Email","email"); 
 
-//3) do the validation
+  frmvalidator.addValidation("Phone","maxlen=50"); 
+  frmvalidator.addValidation("Phone","numeric"); 
 
-//4) send error messages 
+  frmvalidator.addValidation("Address","maxlen=50"); 
+  frmvalidator.addValidation("Country","dontselect=000"); 
 
-//5) return the status of each field
-
-}
