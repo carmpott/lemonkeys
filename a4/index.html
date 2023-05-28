@@ -5,24 +5,41 @@
   <meta name="viewport" content="width=device-width">
   <title>Artifact04 - Validate Contact Us Form using Javascript</title>
   <link rel="stylesheet" type="text/css" href="a4-style.css">
+  <script src="validateForm.js"></script>
   <script type="text/javascript"> 
-var frmvalidator = new Validator("myform"); 
+    var frmvalidator = new Validator("myform"); 
     frmvalidator.addValidation("FirstName","req","Please enter your First Name"); 
     frmvalidator.addValidation("FirstName","maxlen=20","Max length for FirstName is 20"); 
-    frmvalidator.addValidation("LastName","req"); 
+    
+    frmvalidator.addValidation("LastName","req", "Please enter your Last Name); 
     frmvalidator.addValidation("LastName","maxlen=20"); 
+    
     frmvalidator.addValidation("Email","maxlen=50"); 
     frmvalidator.addValidation("Email","req"); 
     frmvalidator.addValidation("Email","email"); 
+    
     frmvalidator.addValidation("Phone","maxlen=50"); 
     frmvalidator.addValidation("Phone","numeric"); 
+    
+    frmvalidator.addValidation("UserName","maxlen=12");
+    frmvalidator.addValidation("UserName","req");
+    
+    frmvalidator.addValidation("Password","maxlen=7");
+    frmvalidator.addValidation("Password","req");
+    frmvalidator.addValidation("Password","");
+    
     frmvalidator.addValidation("Address","maxlen=50"); 
+    frmvalidator.addValidation("Address","req");
+    
+    frmvalidator.addValidation("State","dontselect=000");
     frmvalidator.addValidation("Country","dontselect=000"); 
+    
+    frmvalidator.addValidation("Comments","optional");
   </script>
 </head>
 <body>
   
-<form action="/" id="myform"> 
+<form action="thankyou.html" id="myform"> 
    
 <p> 	<label for='FirstName'>First Name:</label> 	
       <input type="text" id="FirstName" name="FirstName"> 
@@ -30,8 +47,8 @@ var frmvalidator = new Validator("myform");
 <p> 	<label for='LastName'>Last Name:</label> 	
       <input type="text" id="LastName" name="LastName"> 
 </p>
-<p> 	<label for='EMail'>Email:</label> 	
-      <input type="text" id="EMail" name="EMail"> 
+<p> 	<label for='Email'>Email:</label> 	
+      <input type="text" id="Email" name="Email"> 
 </p> 
 <p> 	<label for='Phone'>Phone:</label> 	
       <input type="text" id="Phone" name="Phone">  
