@@ -8,33 +8,42 @@
   <script src="validateForm.js"></script>
   <script type="text/javascript"> 
     var frmvalidator = new Validator("myform"); 
+    frmvalidator.EnableMsgsTogether();
+    frmvalidator.EnableOnPageErrorDisplaySingleBox();
+    
     frmvalidator.addValidation("FirstName","req","Please enter your First Name"); 
     frmvalidator.addValidation("FirstName","maxlen=20","Max length for FirstName is 20"); 
+    frmvalidator.addValidation("FirstName","alpha_s","Name can only contain alphabetic characters");
+
+
     
-    frmvalidator.addValidation("LastName","req", "Please enter your Last Name); 
-    frmvalidator.addValidation("LastName","maxlen=20"); 
+    frmvalidator.addValidation("LastName","req","Please enter your last name"); 
+    frmvalidator.addValidation("LastName","maxlen=20","Max length for LastName is 50"); 
     
-    frmvalidator.addValidation("Email","maxlen=50"); 
-    frmvalidator.addValidation("Email","req"); 
-    frmvalidator.addValidation("Email","email"); 
+    frmvalidator.addValidation("Email","maxlen=50","Please enter your email address"); 
+   
+    frmvalidator.addValidation("Email","email","Please enter a valid email"); 
     
-    frmvalidator.addValidation("Phone","maxlen=50"); 
-    frmvalidator.addValidation("Phone","numeric"); 
+    frmvalidator.addValidation("Phone","maxlen=15", "Max length for phone number is 15 characters"); 
+    frmvalidator.addValidation("Phone","numeric","Please enter only numbers); 
     
-    frmvalidator.addValidation("UserName","maxlen=12");
-    frmvalidator.addValidation("UserName","req");
+    frmvalidator.addValidation("UserName","maxlen=12","Max length for username is 12 characters");
+    frmvalidator.addValidation("UserName","req","Please enter your username");
     
-    frmvalidator.addValidation("Password","maxlen=7");
-    frmvalidator.addValidation("Password","req");
-    frmvalidator.addValidation("Password",);
+    frmvalidator.addValidation("Password","maxlen=7","Max length for passowrd is 7 characters");
+    frmvalidator.addValidation("Password","req", "Please enter password");
     
-    frmvalidator.addValidation("Address","maxlen=50"); 
-    frmvalidator.addValidation("Address","req");
+    frmvalidator.addValidation("Address","maxlen=50","Max length for address is 50 characters"); 
+    frmvalidator.addValidation("Address","req","Please enter an address");
     
     frmvalidator.addValidation("State","dontselect=000");
-    frmvalidator.addValidation("Country","dontselect=000"); 
+     frmvalidator.addValidation("State","req","Please select a state");
     
-    frmvalidator.addValidation("Zipcode","req","Country=USA");
+    frmvalidator.addValidation("Country","dontselect=000");
+     frmvalidator.addValidation("Country","req","Please select a country");
+    
+    frmvalidator.addValidation("Zipcode","req","Please enter a zipcode");
+     frmvalidator.addValidation("Zipcode","Country=USA");
     
     frmvalidator.addValidation("Comments","optional");
   </script>
