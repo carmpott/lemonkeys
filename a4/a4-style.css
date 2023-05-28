@@ -3,6 +3,7 @@ body{
 			font-size: 13px;
 }
 
-errorMessages{
+#myform_errorloc {
       color:red;
 }
+    
