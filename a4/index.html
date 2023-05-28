@@ -43,6 +43,7 @@
      frmvalidator.addValidation("Country","req","Please select a country");
     
     frmvalidator.addValidation("Zipcode","req","Please enter a zipcode");
+    frmvalidator.addValidation("Zipcode","maxlen=5","Max length is 5 characters");
      frmvalidator.addValidation("Zipcode","Country=USA");
     
     frmvalidator.addValidation("Comments","optional");
