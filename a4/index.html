@@ -26,13 +26,15 @@
     
     frmvalidator.addValidation("Password","maxlen=7");
     frmvalidator.addValidation("Password","req");
-    frmvalidator.addValidation("Password","");
+    frmvalidator.addValidation("Password",);
     
     frmvalidator.addValidation("Address","maxlen=50"); 
     frmvalidator.addValidation("Address","req");
     
     frmvalidator.addValidation("State","dontselect=000");
     frmvalidator.addValidation("Country","dontselect=000"); 
+    
+    frmvalidator.addValidation("Zipcode","req","Country=USA");
     
     frmvalidator.addValidation("Comments","optional");
   </script>
