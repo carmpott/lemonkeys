@@ -1,6 +1,7 @@
 
-  body {
+  body .button {
     font-family: 'Courier New', monospace;
+    text-align: center;
     height: 200px;
     background: honeydew;
   }
