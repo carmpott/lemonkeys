@@ -3,9 +3,11 @@
 body{
   background: honeydew;
   font-family: 'Courier New', monospace;
-  
 }
 
+mark{
+ background-color: #b5b5b5;
+}
 
 
 /* Slideshow container */
