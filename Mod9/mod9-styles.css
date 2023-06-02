@@ -1,13 +1,11 @@
 
-  body {
+  body  {
     font-family: 'Courier New', monospace;
     text-align: center;
     height: 200px;
     background: honeydew;
   }
-.click{
-  text-align: center;
-}
+
   .dot {
     height: 8px; width: 8px;
     border-radius: 4px; /* rounds corners */
