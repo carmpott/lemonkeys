@@ -1,13 +1,13 @@
-let slideIndex = 1;
+slideIndex = 1;
 showSlides(slideIndex);
 
 // Next/previous controls
-function plusSlides(n) {
+  plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
 // Thumbnail image controls
-function currentSlide(n) {
+  currentSlide(n) {
   showSlides(slideIndex = n);
 }
 
