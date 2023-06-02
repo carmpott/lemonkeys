@@ -1,5 +1,13 @@
 * {box-sizing:border-box}
 
+body{
+  background: honeydew;
+  font-family: 'Courier New', monospace;
+  
+}
+
+
+
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;
