@@ -25,3 +25,13 @@ function plusSlides(position) {
   slides[slideIndex-1].style.display = "block";  
     dots[slideIndex-1].className += " active";
 }
+
+function currentSlide(index) {
+    if (index> slides.length) {index = 1}
+    else if(index<1){index = slides.length}
+    for (i = 0; i < slides.length; i++) {
+       slides[i].style.display = "none";  
+    }
+slides[index-1].style.display = "block";  
+    dots[index-1].className += " active";
+}
