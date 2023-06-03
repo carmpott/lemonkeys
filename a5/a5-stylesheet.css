@@ -9,6 +9,10 @@ mark{
  background-color: #b5b5b5;
 }
 
+.footer{
+  position:absolute;
+  top: 30%;
+}
 
 /* Slideshow container */
 .slideshow-container {
