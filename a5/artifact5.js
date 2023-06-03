@@ -1,6 +1,7 @@
 slideIndex = 1;
 showSlides(slideIndex);
-
+myImages = ["lemons.jpg", "watermelon.jpg", "dragon-fruit.jpg", "citrus.jpg", "strawberry_shortcake.jpg"];
+window.setInterval(myImages, 2000);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
