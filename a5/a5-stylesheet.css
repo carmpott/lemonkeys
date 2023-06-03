@@ -10,8 +10,7 @@ mark{
 }
 
 footer{
-  position:absolute;
-  top: 80%;
+display: block;
 }
 
 /* Slideshow container */
