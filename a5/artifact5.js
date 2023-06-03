@@ -1,5 +1,8 @@
 slideIndex = 1;
 showSlides(slideIndex);
+i=0;
+slides = document.getElementsByClassName("mySlides");
+dots = document.getElementsByClassName("dot");
 myImages = ["lemons.jpg", "watermelon.jpg", "dragon-fruit.jpg", "citrus.jpg", "strawberry_shortcake.jpg"];
 setInterval(myImages, 2000);
 
@@ -12,9 +15,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  i=0;
-  slides = document.getElementsByClassName("mySlides");
-  dots = document.getElementsByClassName("dot");
   if (n > slides.length) {slideIndex = 1}    
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
