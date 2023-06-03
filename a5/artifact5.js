@@ -26,9 +26,5 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
 }
 
-setInterval("showSlides()",2000);
 
-function showSlides() {
-  document.getElementbyId("mySlides").innerHTML;
-  
   
