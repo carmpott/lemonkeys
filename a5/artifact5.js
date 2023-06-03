@@ -3,8 +3,8 @@ showSlides(slideIndex);
 i=0;
 slides = document.getElementsByClassName("mySlides");
 dots = document.getElementsByClassName("dot");
-const element = document.getElementById("slideshow-container");
-setInterval(function() {element.innerHTML+=0}, 2000);
+setInterval(showSlides, 2000);
+
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
