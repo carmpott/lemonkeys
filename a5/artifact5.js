@@ -3,8 +3,7 @@ showSlides(slideIndex);
 i=0;
 slides = document.getElementsByClassName("mySlides");
 dots = document.getElementsByClassName("dot");
-myImages = ["lemons.jpg", "watermelon.jpg", "dragon-fruit.jpg", "citrus.jpg", "strawberry_shortcake.jpg"];
-setInterval(myImages, 2000);
+setInterval(slides, 2000);
 
 function plusSlides(n) {
   showSlides(slideIndex += n);
