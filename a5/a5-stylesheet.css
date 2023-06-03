@@ -94,6 +94,10 @@ display: block;
   animation-duration: 1.5s;
 }
 
+footer {
+display: block;
+}
+
 @keyframes fade {
   from {opacity: .4}
   to {opacity: 1}
