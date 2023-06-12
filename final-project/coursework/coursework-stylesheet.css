@@ -2,8 +2,11 @@ body {
 font-family: Arial, sans-serif;
 margin: 0;
 padding: 0; 
-background-image: url(.jpg);
-background-size:auto;
+background-image: url(final-background-image.jpg);
+background-size: cover;
+background-repeat: no repeat;
+background-position: center center;
+background-attachment: fixed; 
 color: #3f3f3f;
 font-size: 16px;
 line-height: 24px;
