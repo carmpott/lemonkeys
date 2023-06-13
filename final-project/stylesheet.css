@@ -107,8 +107,8 @@ list-style-type: none; margin: 0; padding: 0 10px 10px 10px;
 #content h2 { font-weight: normal; font-size: 22px; line-height: 33px; }
 #content h3 { font-size: 17px; font-weight: normal; }
 
-.cleft { float: left; width: 280px; margin: 10px 0; }
-.cright { float: right; width: 280px; margin: 10px 0; }
+.cleft { float: left; width: 280px; margin: 8px 0; }
+.cright { float: center; width: 280px; margin: 10px 0; }
 
 #footer { 
 -webkit-border-bottom-right-radius: 10px;
