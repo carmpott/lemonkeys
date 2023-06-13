@@ -10,14 +10,14 @@
 </head>
 <body>
 
-    <audio controls loop id="autoplay">
-     <source src="LazyWalkByCheel.mp3" type="audio/mpeg">
+    <audio id="music">
+     <source src="LazyWalkByCheel.mp3">
         <p> Error. Your brower does not support this comfy cozy beat :( </p>
     </audio>
         <script>
-            window.onload = function(){
-                document.getElementById("autoplay").play();
-            }
+            window.addEventListener('click', () => {
+                document.getElementById("music").play();
+            };
         </script>
         
 <div id="wrap">
