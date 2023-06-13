@@ -1,88 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Artifact04 - Validate Contact Us Form using Javascript</title>
-  <link rel="stylesheet" type="text/css" href="a4-style.css">
-  <script src="validateForm.js"></script>
-  <script type="text/javascript"> 
-    var frmvalidator = new Validator("myform"); 
-    frmvalidator.EnableMsgsTogether();
-    frmvalidator.EnableOnPageErrorDisplaySingleBox();
-    
-    frmvalidator.addValidation("FirstName","req","Please enter your First Name"); 
-    frmvalidator.addValidation("FirstName","maxlen=20","Max length for FirstName is 20"); 
-    frmvalidator.addValidation("FirstName","alpha_s","Name can only contain alphabetic characters");
 
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
 
-    
-    frmvalidator.addValidation("LastName","req","Please enter your last name"); 
-    frmvalidator.addValidation("LastName","maxlen=20","Max length for LastName is 50"); 
-    
-    frmvalidator.addValidation("Email","maxlen=50","Please enter your email address"); 
-   
-    frmvalidator.addValidation("Email","email","Please enter a valid email"); 
-    
-    frmvalidator.addValidation("Phone","maxlen=15", "Max length for phone number is 15 characters"); 
-    frmvalidator.addValidation("Phone","numeric","Please enter only numbers); 
-    
-    frmvalidator.addValidation("UserName","maxlen=12","Max length for username is 12 characters");
-    frmvalidator.addValidation("UserName","req","Please enter your username");
-    
-    frmvalidator.addValidation("Password","maxlen=7","Max length for passowrd is 7 characters");
-    frmvalidator.addValidation("Password","req", "Please enter password");
-    
-    frmvalidator.addValidation("Address","maxlen=50","Max length for address is 50 characters"); 
-    frmvalidator.addValidation("Address","req","Please enter an address");
-    
-    frmvalidator.addValidation("State","dontselect=000");
-     frmvalidator.addValidation("State","req","Please select a state");
-    
-    frmvalidator.addValidation("Country","dontselect=000");
-     frmvalidator.addValidation("Country","req","Please select a country");
-    
-    frmvalidator.addValidation("Zipcode","req","Please enter a zipcode");
-    frmvalidator.addValidation("Zipcode","maxlen=5","Max length is 5 characters");
-     frmvalidator.addValidation("Zipcode","Country=USA");
-    
-    frmvalidator.addValidation("Comments","optional");
-  </script>
+<title>Artifact04 - Validate Contact Us Form using Javascript</title>
+<link rel="stylesheet" type="text/css" href="a4-style.css">
+<script src="validateForm.js" type="text/javascript"></script>
 </head>
+
 <body>
   
-<form action="" id="myform"> 
-   
-<p> 	<label for='FirstName'>First Name:</label> 	
-      <input type="text" id="FirstName" name="FirstName"> 
-</p> 
-<p> 	<label for='LastName'>Last Name:</label> 	
-      <input type="text" id="LastName" name="LastName"> 
-</p>
-<p> 	<label for='Email'>Email:</label> 	
-      <input type="text" id="Email" name="Email"> 
-</p> 
-<p> 	<label for='Phone'>Phone:</label> 	
-      <input type="text" id="Phone" name="Phone">  
-</p>
-    
-<p> 	<label for='UserName'>Username:</label> 	
-      <input type="text" id="UserName" name="UserName"> 
-</p>    
-    
-<p> 	<label for='Password'>Password:</label> 	
-      <input type="text" id="Password" name="Password"> 
-</p>     
-    
-    
-    
-    
-<p> 	<label for='Address'>Address:</label> 	
-      <textarea cols="20" rows="2" id="Address" name="Address"></textarea> 
-</p>
 
-  <p> 	<label for='State'>State:</label> 	
-        <select id="State" name="State"> 
+ <form id="myform" action="https://carmpott.github.io/lemonkeys/a4/index.html">
+
+<p> 
+  <label for="myform_firstname">First Name:</label><br>
+  <input type="text" id="myform_firstname" name="firstname">
+
+<p>
+  <label for="myform_lastname">Last Name:</label><br>
+  <input type="text" id="myform_lastname" name="lastname">
+</p>
+   
+   <p>
+  <label for="myform_email">Email:</label><br>
+  <input type="text" id="myform_email" name="email">
+ </p>
+
+   <p>
+  <label for="myform_phone">Phone:</label><br>
+  <input type="text" id="myform_phone" name="phone">
+ </p> 
+   
+ <p> 	<label for="myform_userName">Username:</label><br> 	
+      <input type="text" id="myform_userName" name="userName"> 
+</p>    
+   
+ <p> 	<label for="myform_password">Password:</label><br>	
+      <input type="text" id="myform_password" name="password"> 
+</p>     
+   
+   <p> 	<label for="myform_address">Address:</label><br>	
+      <textarea cols="20" rows="2" id="myform_address" name="address"></textarea> 
+</p>
+   
+   <p> 	<label for="myform_state">State:</label><br> 	
+        <select id="myform_state" name="state"> 
             <option value="000" selected="selected">[choose your state]</option> 
             <option value="AL">Alabama</option>
             <option value="AK">Alaska</option> 
@@ -136,9 +101,9 @@
             <option value="DC">District of Columbia</option>
       </select> 
 </p>   
-    
-<p> 	<label for='Country'>Country:</label> 	
-      <select id="Country" name="Country"> 
+   
+  <p> 	<label for="myform_country">Country:</label><br> 	
+      <select id="myform_country" name="country"> 
          <option value="000" selected="selected">[choose your country]</option> 
          <option value="USA">United States</option>
          <option value="AU">Australia</option>
@@ -151,22 +116,22 @@
          <option value="AM">Armenia</option> 
          <option value="BO">Bolivia</option> 	
       </select> 
-</p>
-    
- <p> 	<label for='Zipcode'>Zipcode:</label> 	
-      <input type="text" id="Zipcode" name="Zipcode"> 
-</p>    
-    
- <p> 	<label for='Comments'>Comments:</label> 	
-      <textarea cols="20" rows="5" id="Comments" name="Comments"></textarea> 
-</p>   
-    
-<p> 	<input type="submit" name="submit" value="Submit"> 
 </p> 
-</form>
+   
+   
+<p> 	<label for="myform_zipcode">Zipcode:</label><br> 	
+      <input type="text" id="myform_zipcode" name="zipcode"> 
+</p> 
+   
+<p> 	<label for="myform_comments">Comments:</label><br> 	
+      <textarea cols="20" rows="5" id="myform_comments" name="Comments"></textarea> 
+</p>   
+   
+    <button type="submit">Submit</button>
+
+  </form>
+
   
-<div id='myform_errorloc' class='error_strings'></div>  
-
-
-</body>
+  </body>
 </html>
+  
